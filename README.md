@@ -1,6 +1,7 @@
 # Computer Networks Assignments
 
-A collection of assignments for the course of Computer Networks.
+A collection of assignments for the course of Computer Networks involving 
+TCP and UDP protocols.
 
 ---
 ## Information
