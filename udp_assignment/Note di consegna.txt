@@ -1,0 +1,16 @@
+E' possibile inviare operazioni in forma infissa o postfissa.
+Sono accettati operatori interi e decimali, con o senza segno.
+Se l'operazione scelta è il modulo i decimali sono convertiti in interi.
+
+Utilizzo:
+operatore1 operazione operatore2
+oppure
+operatore1 operatore2 operazione
+
+Esempi:
+-3.14 + 5.7
+5 % 2
+-5 -2.5 /
+
+N.B.: Il protocollo prevede che il server spedisca al client, in caso di errore aritmetico, la stringa "\n".
+Le tre stringhe che compongono il messaggio da spedire al server vengono ottenute splittando l'input sul carattere spazio. Pertanto è obbligatorio l'utilizzo di 2 e soltanto 2 spazi per ogni comando.

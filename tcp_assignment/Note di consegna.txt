@@ -1,0 +1,8 @@
+Il codice è stato testato sia su Windows che su Linux, sia con architettura a 32-bit sia a 64-bit.
+Per far comunicare correttamente client e server sono stati adoperati dei tipi di dati la cui dimensione in byte non è dipendente dall'architettura del sistema operativo.
+Per questo motivo uint8_t, uint64_t, ecc... sono stati scelti al posto di int, long, ecc...
+In questo modo client e server possono mandare/ricevere un numero costante di byte e rimanere "allineati"; diversamente, ad esempio, la spedizione di un intero da parte di un client a 64-bit verso un server a 32-bit, avrebbe causato la permamenza di alcuni byte nel buffer.
+
+N.B.: Si consiglia di avviare gli eseguibili del client e del server fuori dall'IDE Ecplise, per 2 motivi:
+1) Le richieste di I/O nella console di Eclipse non sono sincronizzate.
+2) Ecplise assume come cartella di lavoro corrente quella dell'IDE. I comandi ls e rls mostrano pertanto tutto il contenuto della cartella dell'ambiente.
